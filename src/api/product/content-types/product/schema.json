@@ -40,6 +40,12 @@
         "Assets",
         "Design"
       ]
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cart.cart",
+      "inversedBy": "products"
     }
   }
 }
